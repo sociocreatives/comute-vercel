@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  env: {
+// environment variables
+module.exports ={
+    env: {
     GOOGLE_ID: "675709345107-qdbsuhpr0e0nsb9i727lj7g9acrq0t4m.apps.googleusercontent.com",
     GOOGLE_SECRET: "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",
     
@@ -14,8 +14,12 @@ const nextConfig = {
     JWT_SECRET: "ZIoJMHyzDaExglU7tGrJ+XZeBFh/VcvRln7Ksw7RZEo=",
     
     REACT_APP_GOOGLE_MAPS_API_KEY: "AIzaSyCnSALS_W4_pClAPF1bWYIDBhIe7G-82WY"
-  },
+  }
+}
 
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
