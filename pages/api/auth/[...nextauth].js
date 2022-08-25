@@ -7,15 +7,15 @@ export default NextAuth({
   adapter: MongoDBAdapter(clientPromise),
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
+      clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
+      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET,
     })
   ],
-  secret: process.env.JWT_SECRET,
+  secret: process.env.NEXT_PUBLIC_JWT_SECRET,
 // // login page
 //     pages: {
 //         signIn: '/login'
 //     },
 //   database: MongoDB
-    database: process.env.DATABASE_URL
+    database: process.env.NEXT_PUBLIC_DATABASE_URL
 })
